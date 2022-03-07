@@ -1,15 +1,38 @@
-<div>
-  <nav>
-    <ul>
-      <li><a routerLink="/">Home</a></li>
-      <li><a routerLink="/about">About</a></li>
-      <li><a routerLink="/contact">Contact</a></li>
-      <li><a routerLink="/produit">Produit</a></li>
-      <li><a routerLink="/livres">Livres</a></li>
-      <li><a routerLink="/signin">Signin</a></li>
-    </ul>
-  </nav>
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background: #7952b3!important;">
+  <div class="container">
+    <a class="navbar-brand mr-5" href="#">Projet Angular</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/"><i class="fa fa-home"></i> Home </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about"><i class="fa fa-info-circle"></i> About</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact"><i class="fa fa-address-book"></i> Contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/produit"><i class="fa fa-product-hunt"></i> Produit</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/livres"><i class="fa fa-book"></i> Livres</a>
+        </li> 
+        <li class="nav-item ml-auto">
+          <a class="nav-link" routerLink="/signin"><i class="fa fa-sign-in"></i> signin</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container mt-5">
   <main>
-    <router-outlet></router-outlet>
+        <router-outlet></router-outlet>
   </main>
 </div>
+
