@@ -6,6 +6,8 @@ import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { SigninComponent } from './signin/signin.component';
 import { ProduitComponent } from './produit/produit.component';
+import { RetourLivreComponent } from './retour-livre/retour-livre.component';
+import { LivreComponent } from './livre/livre.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -13,6 +15,8 @@ const routes: Routes = [
   { path: 'about', component: AboutComponent},
   { path: 'signin', component: SigninComponent},
   { path: 'produit', component: ProduitComponent },
+  { path: 'livres', component: LivreComponent},
+  { path: 'livre/:id', component: RetourLivreComponent},
   { path: '**', component: NotFoundComponent},
 ];
 
