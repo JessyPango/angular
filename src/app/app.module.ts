@@ -6,6 +6,7 @@ import {Bonjour} from "./bonjour.component";
 import { ContactComponent } from './contact/contact.component';
 import { AboutComponent } from './about/about.component';
 import {FormsModule} from "@angular/forms";
+import {AppRoutingModule} from "./app-routing.module";
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import {FormsModule} from "@angular/forms";
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    AppRoutingModule // CLI adds AppRoutingModule to the AppModule's imports array
   ],
   providers: [],
   bootstrap: [AppComponent]
