@@ -12,10 +12,20 @@ export class AboutComponent implements OnInit {
     email: 'kvnjessy@gmail.com',
     tel: '28484771'
   }
+  profil =  {
+    firstName:'Pango',
+    lastName:'Jessy',
+    fullName: "Jessy Pango",
+    email: 'kvnjessy@gmail.com',
+    tel: '28484771',
+    img: 'assets/images/profil.png',
+  }
 
   comments:any[] = []
 
-  comment = {id:0, message:'', date:null};
+  comment = {id:0, message:'', date:null, name:'Undefined',
+    url: 'Angular.com'
+  };
   newComment = false;
 
   constructor() { }

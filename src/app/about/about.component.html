@@ -1,25 +1,140 @@
+<section class="">
+  <div class="container-fluid m-0 ">
+    <div class="row d-md-flex-row  overflow-hidden">
+      <div class="col-12 col-md-4  p-0 col-12 bg-light d-flex overflow-hidden ">
+        <div class="card p-0 w-100 h-100 text-light   border-0 ">
+          <img class="card-img h-100 w-100" src="{{profil.img}}" alt="Card image">
+          <div class="card-img-overlay p-1 p-md-3 d-flex flex-column justify-content-between">
+            <div class="row align-items-start">
+              <div class="col-5 col-md-3">
+                <h4 class="mt-1">{{profil.fullName}}</h4>
+              </div>
+              <div class="col-md-9 col-7 text-right">
+                <div class="row align-items-center">
+                  <div class="col-12 align-self-center">
+                    <hr class="border border-border-light mt-3">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row align-items-end justify-content-end p-md-3">
+              <a role="button" class="btn btn-social-icon btn-twitter mr-2">
+                <span class="fa fa-twitter"></span>
+              </a>
+              <a role="button" class="btn btn-social-icon btn-github mr-2">
+                <span class="fa fa-github"></span>
+              </a>
+              <a role="button" class="btn btn-social-icon btn-linkedin mr-2">
+                <span class="fa fa-linkedin"></span>
+              </a>
+              <a role="button" class="btn btn-social-icon btn-facebook">
+                <span class="fa fa-facebook"></span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-8  pt-5 pt-md-1 pb-5 overflow-hidden bg-light">
+        <div class="container-fluid p-md-5 d-flex align-items-center h-100">
+          <div class="row justify-content-md-center">
 
-<h1 style="color: firebrick"> Welcome App </h1>
-<ul>
-  <li>{{info.nom}}</li>
-  <li>{{info.email}}</li>
-  <li>{{info.tel}}</li>
-</ul>
+            <div class="col-md-8">
 
-<div class="form-group">
-  <label for=""> Message </label>
-  <input type="text" [(ngModel)]="comment.message"/>  <!-- Two Way Bindings-->
-  <button class="btn btn-primary" type="submit" (click)="addComment()" [disabled]="newComment"> <!-- Event + Property Binding-->
+              <h3 class="small">J E S S Y&nbsp;&nbsp;&nbsp;P A N G O / C V</h3>
+
+              <h1 class="  mb-5 pt-md-2 pt-sm-4">I'm Experienced<br>Web App &amp; UI Designer </h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis pharetra varius quam sit amet vulputate.
+                Quisque mauris augue, molestie tincidunt condimentum vitae, gravida a libero. Aenean sit amet felis
+                dolor, in sagittis nisi. Sed ac orci quis tortor imperdiet venenatis. Duis elementum auctor accumsan.
+                Aliquam in felis sit amet augue.</p>
+              <h5 class="mt-5">Technologies used:</h5>
+              <ul class="list-inline">
+                <li class="list-inline-item"><span class="badge badge-info badge-pill">Angular</span></li>
+                <li class="list-inline-item"><span class="badge badge-success badge-pill">Python</span></li>
+                <li class="list-inline-item"><span class="badge badge-warning badge-pill">jQuery</span></li>
+                <li class="list-inline-item"><span class="badge badge-dark badge-pill">Bootstrap</span></li>
+                <li class="list-inline-item"><span class="badge badge-danger badge-pill">HTML/SASS/CSS</span></li>
+                <li class="list-inline-item"><span class="badge badge-primary badge-pill">MySQL/Oracle</span></li>
+              </ul>
+
+              <p class="mt-md-5 mt-5 mb-5">
+                <a routerLink="/home" class="btn btn-dark shadow-lg">See my portfolio</a>
+              </p>
+
+            </div>
+            <div class="col-12 col-md-4 pt-md-5">
+              <h5 class="mt-md-4 mb-3 small text-uppercase">Frontend</h5>
+              <div class="progress mb-3 mt-2">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 80%">
+                  <span class="stacked-label">HTML</span>
+                </div>
+              </div>
+              <div class="progress mb-3 mt-2">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 90%">
+                  <span class="stacked-label">CSS</span>
+                </div>
+
+              </div>
+              <div class="progress mb-3 mt-2">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 70%">
+                  <span class="stacked-label">JavaScript</span>
+                </div>
+              </div>
+              <h5 class="mt-md-5 mb-3 small text-uppercase">Backend</h5>
+              <div class="progress mb-3 mt-2">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 70%">
+                  <span class="stacked-label">Python&nbsp;/&nbsp;Django&nbsp;/Flask</span>
+                </div>
+              </div>
+              <div class="progress mb-3 mt-2">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 80%">
+                  <span class="stacked-label">Java&nbsp;/&nbsp;Spring</span>
+                </div>
+              </div>
+              <div class="progress mb-3 mt-2">
+                <div class="progress-bar bg-dark" role="progressbar" style="width: 60%">
+                  <span class="stacked-label">PHP&nbsp;/&nbsp;Symfony</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+<section class="container">
+  <div class="h4 text-center mt-5">Text me</div>
+  <div class="input-group">
+    <span class="input-group-text">Message</span>
+    <textarea class="form-control" [(ngModel)]="comment.message"></textarea>
+  </div>
+  <div class="input-group">
+    <span class="input-group-text">About you</span>
+    <input type="text" name="" class="form-control" placeholder="your name" [(ngModel)]="comment.name">
+    <input type="text" name="" class="form-control" placeholder="your website" [(ngModel)]="comment.url">
+  </div>
+  <button class="btn btn-primary mt-5 btn-lg" type="submit" (click)="addComment()" [disabled]="newComment">
     Add comment
   </button>
-</div>
 
-<div *ngIf="comments.length>0">
-  <h3>Liste des messages : </h3>
-  <ul class="list-group">
-    <li *ngFor="let c of comments" class="list-group-item">
-      <b>{{c.message}} <!--String Interpolation --></b>: c'est le message n° {{c.id}} publié à
-      <span class="badge badge-secondary">{{c.date|date:'HH:mm:ss'}}</span>
-    </li>
-  </ul>
-</div>
+  <div *ngIf="comments.length>0">
+    <h3>Liste des messages : </h3>
+    <ul class="list-group">
+      <li *ngFor="let c of comments" class="list-group-item">
+        <div class="row">
+          <div class="col-2 d-flex flex-column">
+            <span class="fa fa-user" style="font-size: 50px;"> </span>
+            <span> {{ c.name }}</span>
+            <a href="{{c.urs}}">{{c.url}}</a>
+          </div>
+          <div class="col-10">
+            <b>{{c.message}} </b>: c'est le message n° {{c.id}} publié à
+            <span class="badge badge-secondary">{{c.date|date:'HH:mm:ss'}}</span>
+          </div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</section>

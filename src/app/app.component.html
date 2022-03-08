@@ -1,17 +1,15 @@
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary" style="background: #7952b3!important;">
-  <div class="container">
-    <a class="navbar-brand mr-5" href="#">Projet Angular</a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<nav id="topheader" class="navbar navbar-expand-lg navbar-dark bg-primary">
+  <div class="container-fluid">
+    <a class="navbar-brand mr-5" href="#">Hello Angular</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" routerLink="/"><i class="fa fa-home"></i> Home </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" routerLink="/about"><i class="fa fa-info-circle"></i> About</a>
+          <a class="nav-link " routerLink="/"><i class="fa fa-home"></i> Home </a>
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/contact"><i class="fa fa-address-book"></i> Contact</a>
@@ -21,18 +19,27 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" routerLink="/livres"><i class="fa fa-book"></i> Livres</a>
-        </li> 
+        </li>
+      </ul>
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item ml">
+          <a class="nav-link" routerLink="/signin">Se Connecter</a>
+        </li>
         <li class="nav-item ml-auto">
-          <a class="nav-link" routerLink="/signin"><i class="fa fa-sign-in"></i> signin</a>
+          <a class="nav-link" routerLink="/meteo">Outils de meteo </a>
+        </li>
+        <li class="nav-item ml-auto">
+          <a class="nav-link" routerLink="/lt">Outils de traduction </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about">About Me</a>
         </li>
       </ul>
     </div>
   </div>
+
 </nav>
+<div class="">
+  <router-outlet></router-outlet>
 
-<div class="container mt-5">
-  <main>
-        <router-outlet></router-outlet>
-  </main>
 </div>
-

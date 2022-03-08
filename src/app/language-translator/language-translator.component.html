@@ -1,0 +1,29 @@
+<div class="container-fluid bg-warning p-5 border rounded">
+    <div class="row p-2 bg-light">
+      <div class="col-12 col-md-5 form-group row">
+          <select [(ngModel)]="languageInput" class="btn-outline-warning display-4">
+            <option *ngFor="let l of languages" value="{{l.language}}">{{l.name}} ({{l.language}})</option>
+          </select>
+      </div>
+      <div class="col-0 col-md-2 d-flex justify-content-center align-items-center m-0 p-0">
+        <button (click)="getTranslation()" class="material-icons btn btn-warning text-white p-1 px-4">
+          swap_horiz
+        </button>
+      </div>
+      <div class="col-12 col-md-5">
+        <select [(ngModel)]="languageOutput" class="btn-outline-warning display-4">
+          <option *ngFor="let l of languages" value="{{l.language}}">{{l.name}} ({{l.language}})</option>
+        </select>
+      </div>
+    </div>
+    <div class="row border border-secondary bg-light  ">
+      <div class="text text-enter col-12 col-md-6 border-end bg-light ">
+        <textarea class="text-input display-4" name="text" id="" autofocus [(ngModel)]="textInput">
+
+        </textarea>
+      </div>
+      <div class="text text-result display-4 col-12 col-md-6 border-start bg-light">
+        {{textResult}}
+      </div>
+    </div>
+</div>

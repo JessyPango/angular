@@ -8,6 +8,8 @@ import { SigninComponent } from './signin/signin.component';
 import { ProduitComponent } from './produit/produit.component';
 import { RetourLivreComponent } from './retour-livre/retour-livre.component';
 import { LivreComponent } from './livre/livre.component';
+import {LanguageTranslatorComponent} from "./language-translator/language-translator.component";
+import {MeteoComponent} from "./meteo/meteo.component"; // CLI imports router
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -17,6 +19,8 @@ const routes: Routes = [
   { path: 'produit', component: ProduitComponent },
   { path: 'livres', component: LivreComponent},
   { path: 'livre/:id', component: RetourLivreComponent},
+  { path: 'lt', component:LanguageTranslatorComponent},
+  { path: 'meteo', component:MeteoComponent},
   { path: '**', component: NotFoundComponent},
 ];
 
